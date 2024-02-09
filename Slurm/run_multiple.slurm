@@ -10,6 +10,8 @@ for arg in "${args[@]}"; do
 #SBATCH --job-name=python_job
 #SBATCH --output=python_job_%j.out
 #SBATCH --cpus-per-task=1
+#SBATCH --ntasks=1
+#SBATCH --N=1
 #SBATCH --time=10:00
 #SBATCH --mem-per-cpu=100
 #SBATCH --partition=smp-rh7

@@ -2,6 +2,8 @@
 #SBATCH --job-name=python_job
 #SBATCH --output=python_job_%A_%a.out
 #SBATCH --cpus-per-task=1
+#SBATCH --ntasks=1
+#SBATCH --N=1
 #SBATCH --time=10:00
 #SBATCH --mem-per-cpu=100
 #SBATCH --array=1-10
