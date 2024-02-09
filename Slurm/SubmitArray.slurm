@@ -6,7 +6,7 @@
 #SBATCH --mem-per-cpu=100
 #SBATCH --array=1-10
 
-#module load miniconda/py38_4.12.0
+module load miniconda/py38_4.12.0
 #module load module load gnu/9.4.0
 #conda activate /home/fschmi69/Software/NEST3_3
 
