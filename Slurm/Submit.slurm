@@ -1,12 +1,8 @@
 #!/bin/bash
-#SBATCH --job-name=python_job
-#SBATCH --output=python_job_%j.out
 #SBATCH --cpus-per-task=1
-#SBATCH --ntasks=1
-#SBATCH --N=1
-#SBATCH --time=10:00
-#SBATCH --mem-per-cpu=100
-#SBATCH --partition=smp-rh7
+#SBATCH --mem=100mb
+#SBATCH --time=00:05:00
+#SBATCH --account=fschmi69
 
 module load miniconda/py38_4.12.0
 #module load module load gnu/9.4.0
