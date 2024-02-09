@@ -1,10 +1,10 @@
 #!/bin/bash
 #SBATCH --job-name=python_job
 #SBATCH --output=python_job_%j.out
-#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
 #SBATCH --time=10:00
 #SBATCH --mem-per-cpu=100
-
+#SBATCH --partition=smp-rh7
 
 module load miniconda/py38_4.12.0
 #module load module load gnu/9.4.0
@@ -12,4 +12,4 @@ module load miniconda/py38_4.12.0
 
 export MY_ENV_VAR="Hello, World!"
 
-python Example.py --arg $i
+python Example.py --arg 5
